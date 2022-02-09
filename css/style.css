@@ -1,0 +1,433 @@
+#headerContainer { display: flex;
+    justify-content: space-between; 
+    margin: 0px;
+    background-color: #262626;
+    height: 120px;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px #000000;
+    position: sticky;
+}
+    
+    nav h1 { color: #D9B344; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    cursor: pointer;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    }
+    
+    .iconsearchContainer { height: 35px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background-color: #262626;
+    width: 35px;
+    background-image: url("../images/search.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+
+.iconsearchContainer:hover { transform: rotate(-45deg);
+    
+   }
+/**#searchIcon:hover { transform: translateX(40);
+outline: ; }**/
+
+
+.primaryNav { display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#project { display: flex;
+justify-content: center;
+align-items: center;
+height: 35px;
+width: 120px;
+/**outline: 2px solid red;**/ 
+margin: 0px;
+padding: 5px;
+background-color: #262626;
+color: #FFC91B;
+font-weight: 400;
+transition: 0.3s;}
+
+#project:hover { background-color: #575757;
+color: #ffffff; }
+
+#project:hover img:hover { 
+    transition: 0.3s;
+    transform: rotate(180deg); }
+
+#project img { margin: 10px; }
+
+ul {
+
+list-style-type: none;
+margin:0;
+padding: 0;
+}
+
+#projectDropdown { 
+   display: none;
+    background-color: #575757;
+    position:relative; 
+ }
+
+#projectDropdown li { 
+    margin: 0;
+    padding: 15px;
+
+}
+
+
+#about { display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 120px;
+/**outline: 2px solid red;**/ 
+    margin: 0px;
+    padding: 5px;
+    background-color: #262626;
+color: #FFC91B;
+font-weight: 400;
+transition: 0.3s;
+}
+
+#about:hover { background-color: #575757;
+    color: #ffffff; }
+
+#resume { display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 120px;
+/**outline: 2px solid red;**/ 
+    margin: 0px;
+    padding: 5px;
+    background-color: #262626;
+color: #FFC91B;
+font-weight: 400;
+transition: 0.3s;
+}
+
+#resume:hover { background-color: #575757;
+    color: #ffffff; }
+
+#contact { display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 120px;
+/**outline: 2px solid red;**/  
+    margin: 0px;
+    padding: 5px;
+    background-color: #262626;
+color: #FFC91B;
+font-weight: 400;
+transition: 0.3s;
+}
+
+p { 
+    display: block;
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: 'Public Sans', sans-serif;
+ }
+
+#contact:hover { background-color: #575757;
+    color: #ffffff; }
+
+.sectionContents { display: grid;
+    margin: 20px;
+grid-template-columns: 20% 80%;
+grid-template-areas: 
+"profilePicture" "aboutProfile";
+/*background-color: #262626;*/
+ }
+
+ #aboutPictures { display: grid;
+    grid-template-rows: 50% 5% 50%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "profilePicture"
+    "tools"
+    "toolDescription";
+/**outline: 2px solid blue;**/
+height: 480px;
+margin: 10px;
+padding: 10px;}
+
+#aboutProfile { display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items:flex-start;
+    /**outline: 2px solid blue;**/
+height: 480px;
+margin: 10px;
+padding: 10px;
+}
+
+.profilePicture { grid-area: profilePicture;
+background-image: url("../images/profile\ picture\ rounded.png");
+height: 100%;
+width: 100%;
+border-radius: 50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+align-items:center;
+justify-content:center;}
+
+#tools { 
+    grid-area: tools;
+    margin: 30px;
+color: #ffffff; }
+
+.toolDescription { 
+    grid-area: toolDescription;
+    margin: 30px;
+    margin-top: 30px;
+    color: #ffffff;
+ }
+
+ #name, #role, #bio { color: #ffffff; }
+
+
+ #aboutBio { /**outline: 2px solid #FFC91B;**/
+    background-color: #262626;
+    color: #ffffff;}
+
+/* my skills*/
+
+#mySkills { 
+    display: block;
+    /**outline: 2px solid red;**/
+    margin: 10px;
+    color: #ffffff;
+  
+ }
+
+ #mySkills h1{ display: block;
+    border-bottom: 2px solid #FFC91B;
+    text-align: center;
+    margin: 10px;
+  }
+
+.myUxSkills { 
+    display: grid;
+    margin: 10px;
+    /**outline: 2px solid blue;**/
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-template-rows: 20% 5% 75%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "designSketch" "prototyping" "usertesting" "myuiTools"
+    "img" "img" "img" "img"
+    "h3" "h3" "h3"
+ }
+
+
+h2 { 
+    display: block;
+    border-bottom: 2px solid #FFC91B;
+    text-align:left;
+    margin: 10px;
+    color: #ffffff;
+ }
+
+
+.myUiSkills { 
+    display: grid;
+    margin: 10px;
+    /**outline: 2px solid blue;**/
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-template-rows: 20% 5% 75%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "designSketch" "prototyping" "usertesting" "myuiTools"
+    "img" "img" "img" "img"
+    "h3" "h3" "h3"
+
+}
+
+#userResearch { 
+    display: block;
+    margin: 10px;
+    color: #ffffff;
+    font-family: 'Public Sans', sans-serif; 
+ }
+
+
+#userEmpathy { 
+    display: block;
+    margin: 10px;
+    color: #ffffff;
+    font-family: 'Public Sans', sans-serif;
+}
+
+#quantitativeIntervies { 
+    display: block;
+    margin: 10px;
+    color: #ffffff;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.myuxTools { 
+    display: block;
+    border-color: #D9B344;
+    font-family: 'Public Sans', sans-serif;
+}
+
+#designSketch { 
+    display: block;
+    margin: 10px;
+    color: #ffffff;
+    font-family: 'Public Sans', sans-serif;   
+ }
+
+#prototyping { 
+    display: block;
+    margin: 10px;
+    color: #ffffff;
+    font-family: 'Public Sans', sans-serif;
+}
+
+#usertesting { 
+    display: block;
+    margin: 10px;
+    color: #ffffff;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.myuiTools { 
+    display: block;
+}
+
+.toolList { 
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    width: 325px;
+    height: 355px;
+    /**border: 2px solid red;**/
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px #000000;
+    background-color: #D9B344;
+    color: #000000;
+    font-family: 'Public Sans', sans-serif;
+ }
+/*footer*/
+
+#footerContainer { display: flex;
+    justify-content: center; 
+    margin: 0px;
+    height: 120px;
+    align-items: center;
+    background-color: #262626;
+}
+.instagram { display: flex;
+    height: 25px;
+    width: 25px;
+    /**outline: 2px solid #363333;**/
+    background-image: url("../images/editinsta.png");
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 15px;
+cursor: pointer;
+transition: 0.3s; 
+}
+
+.instagram:hover { 
+    background-image: url("../images/instagram\ color.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px;
+    cursor: pointer; 
+ }
+
+
+.linkedIn { display: flex;
+    height: 25px;
+    width: 25px;
+    /**outline: 2px solid #363333;**/
+    background-image: url("../images/Edit\ linkedin.png");
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 15px; 
+cursor: pointer;
+transition: 0.3s;
+ }
+
+.linkedIn:hover { 
+    background-image: url("../images/Linking\ color.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px;
+    cursor: pointer;
+ }
+
+.gitHub { display: flex;
+    height: 25px;
+    width: 25px;
+    /**outline: 2px solid #363333;**/
+    background-image: url("../images/github.png");
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 15px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.gitHub:hover { 
+    background-image: url("../images/github\ color.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px;
+    cursor: pointer;
+ }
+
+.email { display: flex;
+    height: 25px;
+    width: 25px;
+    /**outline: 2px solid #363333;**/
+    background-image: url("../images/editemail.png");
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 15px;
+cursor: pointer;
+transition: 0.3s;
+ }
+
+.email:hover { 
+    background-image: url("../images/Email\ color.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px;
+    cursor: pointer;
+}
+
+
+
+body { background-color: #262626;
+    font-family: 'Public Sans', sans-serif; }
