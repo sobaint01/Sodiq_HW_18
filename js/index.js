@@ -16,7 +16,7 @@ $("#contact").hover( function(){
 
 //burger toggle
 
-$(".burgerIcon").on("click")( function(){
-  $(".navChildburger","display","flex").slideToggle();
-});
+//$(".burgerIcon").on("click")( function(){
+ // $(".navChildburger","display","flex").slideToggle();
+//});
 
