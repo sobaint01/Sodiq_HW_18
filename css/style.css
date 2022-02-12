@@ -46,6 +46,7 @@
 
     }
 
+
     
     .iconsearchContainer { height: 35px;
     display: flex;
@@ -134,7 +135,7 @@ transition: 0.3s;
     color: #F2F2F2;
 }
 
-#contact { display: block;
+#contact { display: inline;
     height: 35px;
 width: 120px;
 position: relative;
