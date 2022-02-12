@@ -1,3 +1,9 @@
+* {
+    margin: 0px; 
+    padding: 0px;
+}
+
+
 #headerContainer { display: flex;
     justify-content: space-between; 
     margin: 0px;
@@ -6,7 +12,8 @@
     align-items: center;
     box-sizing: border-box;
     box-shadow: 4px 4px 8px #000000;
-    position: sticky;
+    position: sticky !important;
+    z-index: 15;
 }
     
     nav h1 { color: #D9B344; 
@@ -17,6 +24,26 @@
     display: flex;
     align-items: center;
     font-family: 'Merriweather Sans', sans-serif;
+    }
+
+    .homePagelogo {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .burgerIcon {
+        background-image: url("../images/Burger\ icon\ interactive.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    height: 35px;
+    width: 50px;
+    /**outline: 1px solid red;**/
+    margin-left: 40px;
+    display: none;
+
     }
     
     .iconsearchContainer { height: 35px;
@@ -63,7 +90,7 @@ transition: 0.3s;
     transition: 0.3s;
     transform: rotate(180deg);
     background-color: #575757;
-    color: #ffffff;
+    color: #F2F2F2;
 }
 
 #about { display: block;
@@ -83,7 +110,7 @@ transition: 0.3s;
     transition: 0.3s;
     transform: rotate(180deg);
     background-color: #575757;
-    color: #ffffff;
+    color: #F2F2F2;
 }
 
 #resume { display: block;
@@ -103,7 +130,7 @@ transition: 0.3s;
     transition: 0.3s;
     transform: rotate(180deg);
     background-color: #575757;
-    color: #ffffff;
+    color: #F2F2F2;
 }
 
 #contact { display: block;
@@ -123,7 +150,7 @@ transition: 0.3s;
     transition: 0.3s;
     transform: rotate(180deg);
     background-color: #575757;
-    color: #ffffff;
+    color: #F2F2F2;
 }
 
 ul {
@@ -132,6 +159,24 @@ list-style-type: none;
 margin:0;
 padding: 0;
 }
+/**navChilds**/
+
+.navChildburger { 
+    display: none;
+    background-color: #575757;
+    position:relative;
+    /**outline: 2px solid red;**/
+    width: 250px;
+    height: fit-content;
+    margin-top: 40px; 
+ }
+
+.navChildburger li { 
+   margin: 0;
+   padding: 15px;
+   border: 1px solid #000000;
+}
+
 
  .navChildproject { 
      display: none;
@@ -199,10 +244,10 @@ padding: 0;
 
 
 #about:hover { background-color: #575757;
-    color: #ffffff; }
+    color: #F2F2F2; }
 
 #resume:hover { background-color: #575757;
-    color: #ffffff; }
+    color: #F2F2F2; }
 
 
 
@@ -216,13 +261,14 @@ p {
  }
 
 #contact:hover { background-color: #575757;
-    color: #ffffff; }
+    color: #F2F2F2; }
 
 .sectionContents { display: grid;
     margin: 20px;
 grid-template-columns: 20% 80%;
+grid-template-rows: 1fr;
 grid-template-areas: 
-"profilePicture" "aboutProfile";
+"aboutPictures" "aboutProfile";
 /*background-color: #262626;*/
  }
 
@@ -273,13 +319,13 @@ justify-content:center;}
 #tools { 
     grid-area: tools;
     margin: 30px;
-color: #ffffff; }
+color: #F2F2F2; }
 
 .toolDescription { 
     grid-area: toolDescription;
     margin: 30px;
     margin-top: 30px;
-    color: #ffffff;
+    color: #F2F2F2;
  }
 
  #name, #role, #bio { color: #ffffff; }
@@ -287,7 +333,7 @@ color: #ffffff; }
 
  #aboutBio { /**outline: 2px solid #FFC91B;**/
     background-color: #262626;
-    color: #ffffff;}
+    color: #F2F2F2;}
 
 /* my skills*/
 
@@ -295,7 +341,7 @@ color: #ffffff; }
     display: block;
     /**outline: 2px solid red;**/
     margin: 10px;
-    color: #ffffff;
+    color: #F2F2F2;
   
  }
 
@@ -347,7 +393,7 @@ h2 {
 #userResearch { 
     display: block;
     margin: 10px;
-    color: #ffffff;
+    color: #F2F2F2;
     font-family: 'Public Sans', sans-serif; 
  }
 
@@ -355,14 +401,14 @@ h2 {
 #userEmpathy { 
     display: block;
     margin: 10px;
-    color: #ffffff;
+    color: #F2F2F2;
     font-family: 'Public Sans', sans-serif;
 }
 
 #quantitativeIntervies { 
     display: block;
     margin: 10px;
-    color: #ffffff;
+    color: #F2F2F2;
     font-family: 'Public Sans', sans-serif;
 }
 
@@ -375,21 +421,21 @@ h2 {
 #designSketch { 
     display: block;
     margin: 10px;
-    color: #ffffff;
+    color: #F2F2F2;
     font-family: 'Public Sans', sans-serif;   
  }
 
 #prototyping { 
     display: block;
     margin: 10px;
-    color: #ffffff;
+    color: #F2F2F2;
     font-family: 'Public Sans', sans-serif;
 }
 
 #usertesting { 
     display: block;
     margin: 10px;
-    color: #ffffff;
+    color: #F2F2F2;
     font-family: 'Public Sans', sans-serif;
 }
 
@@ -641,4 +687,123 @@ transition: 0.3s;
 
 
 body { background-color: #262626;
-    font-family: 'Public Sans', sans-serif; }
+    font-family: 'Public Sans', sans-serif;
+color: #F2F2F2 !important; }
+
+@media only screen and (max-width: 820px) {
+
+   /**h1 { 
+       color: red;
+   } **/
+
+   /**.myCaseStudies { 
+       display: flex; 
+       flex-direction: column;
+   } **/
+   #caseSkills { 
+       display: flex; 
+       flex-direction: column;
+   } 
+
+   .skillssummary { 
+       height: 100%;
+       margin-bottom: 35px;
+   }
+
+   #caseDol { 
+    display: flex; 
+    flex-direction: column;
+} 
+
+#caseDol { 
+    height: 100%;
+    margin-bottom: 35px;
+}
+
+#caseCof { 
+    display: flex; 
+    flex-direction: column;
+} 
+
+#caseCof { 
+    height: 100%;
+    margin-bottom: 35px;
+
+}
+
+.myUiSkills {
+    display: flex;
+    flex-direction: column;
+}
+
+.myUiSkills h3 {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.myUxSkills {
+    display: flex;
+    flex-direction: column;
+}
+
+.myUxSkills h3 {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sectionContents { display: grid;
+    margin: 20px;
+grid-template-columns: 1fr;
+grid-template-rows: 50% 50%;
+grid-template-areas: 
+"aboutPictures" 
+"aboutProfile";
+/*background-color: #262626;*/
+
+ }
+
+ #aboutPictures { 
+border-top-right-radius: 30px;
+border-top-left-radius: 30px;
+border-bottom-left-radius: 0px;
+box-sizing: border-box;
+box-shadow: 4px 4px 8px #000000;
+color: #000000;
+}
+
+#aboutProfile { 
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px #000000;
+    color: #000000;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0px;
+    }
+
+.profilePicture { grid-area: profilePicture;
+        height: 100%;
+        width: 50%;
+        border-radius: 60%;
+}
+
+nav h1 { color: #D9B344; 
+    margin: 10px;
+    cursor: pointer;
+    height: 45px;
+    }
+
+.primaryNav { display: none;
+    }
+
+.burgerIcon {
+    
+    display: flex;
+
+    }
+    
+}
+
+
+

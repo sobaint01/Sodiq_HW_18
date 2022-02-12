@@ -1,15 +1,22 @@
-$("#project").on("click", function(){
+$("#project").hover( function(){
    $(".navChildproject").slideToggle();
 });
 
-$("#about").on("click", function(){
+$("#about").hover( function(){
   $(".navChildabout").slideToggle();
 });
 
-$("#resume").on("click", function(){
+$("#resume").hover( function(){
   $(".navChildresume").slideToggle();
 });
 
-$("#contact").on("click", function(){
+$("#contact").hover( function(){
   $(".navChildcontact").slideToggle();
 });
+
+//burger toggle
+
+$(".burgerIcon").on("click")( function(){
+  $(".navChildburger","display","flex").slideToggle();
+});
+
