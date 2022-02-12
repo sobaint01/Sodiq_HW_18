@@ -75,7 +75,7 @@ outline: ; }**/
     align-items: center;
 }
 
-#project { display: block;
+#project { display: inline;
     height: 35px;
 width: 120px;
 position: relative;
@@ -95,7 +95,7 @@ transition: 0.3s;
     color: #F2F2F2;
 }
 
-#about { display: block;
+#about { display: inline;
     height: 35px;
 width: 120px;
 position: relative;
@@ -115,7 +115,7 @@ transition: 0.3s;
     color: #F2F2F2;
 }
 
-#resume { display: block;
+#resume { display: inline;
     height: 35px;
 width: 120px;
 position: relative;
