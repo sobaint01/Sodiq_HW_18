@@ -51,21 +51,42 @@
     .iconsearchContainer { height: 35px;
     display: flex;
     align-items: center;
-    margin: 10px;
-    background-color: #262626;
-    width: 35px;
-    background-image: url("../images/search.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    transition: 0.3s;
+    justify-content: space-between;
+    
+   
     }
 
+    #searchIcon { height: 35px;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        background-color: #262626;
+        width: 35px;
+        background-image: url("../images/search.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        transition: 0.3s;
+        }
 
-.iconsearchContainer:hover { transform: rotate(-45deg);
+
+#searchIcon:hover { transform: rotate(-45deg);
+    translate:initial;
     
    }
+
+.searchform {
+    outline: 2pt solid #FFC91B;
+    margin-left: 0px;
+    width: 200px;
+    height: 35px;
+    margin: 10px;
+    color: #D9B344;
+    text-align: center;
+    display: none;
+}
+
 /**#searchIcon:hover { transform: translateX(40);
 outline: ; }**/
 
