@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+a {
+    color: #D9B344;
+
+}
+
 
 #headerContainer { display: flex;
     justify-content: space-between; 
@@ -100,7 +105,7 @@ outline: ; }**/
     height: 35px;
 width: 120px;
 position: relative;
-/**outline: 2px solid red;**/ 
+/**outline: 2px solid red;**/
 margin: 0px;
 padding: 5px;
 background-color: #262626;
@@ -120,7 +125,7 @@ transition: 0.3s;
     height: 35px;
 width: 120px;
 position: relative;
-/**outline: 2px solid red;**/ 
+/**outline: 2px solid red;**/
 margin: 0px;
 padding: 5px;
 background-color: #262626;
@@ -272,6 +277,11 @@ padding: 0;
 #resume:hover { background-color: #575757;
     color: #F2F2F2; }
 
+#contact:hover { background-color: #575757;
+        color: #F2F2F2; }
+        
+#project:hover { background-color: #575757;
+            color: #F2F2F2; }
 
 
 p { 
@@ -283,8 +293,6 @@ p {
     font-family: 'Public Sans', sans-serif;
  }
 
-#contact:hover { background-color: #575757;
-    color: #F2F2F2; }
 
 .sectionContents { display: grid;
     margin: 20px;
@@ -372,6 +380,18 @@ color: #F2F2F2; }
     border-bottom: 2px solid #FFC91B;
     text-align: center;
     margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px #000000;
+    
+  }
+
+  #mySkills h2 { display: block;
+    border-bottom: 2px solid #FFC91B;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px #000000;
+    
   }
 
 .myUxSkills { 
@@ -420,6 +440,20 @@ h2 {
     font-family: 'Public Sans', sans-serif; 
  }
 
+ #userResearch img , h3{ 
+    margin: 30px;  
+ }
+
+
+ #userEmpathy img , h3{ 
+    margin: 30px;  
+ }
+
+ #quantitativeIntervies img , h3{ 
+    margin: 30px;  
+ }
+
+
 
 #userEmpathy { 
     display: block;
@@ -466,6 +500,19 @@ h2 {
     display: block;
 }
 
+#designSketch img , h3{ 
+    margin: 30px;  
+ }
+
+ #prototyping img , h3{ 
+    margin: 30px;  
+ }
+
+ #usertesting img , h3{ 
+    margin: 30px;  
+ }
+
+
 .toolList { 
     display: block;
     margin: 20px;
@@ -490,10 +537,13 @@ h2 {
         border-bottom: 2px solid #FFC91B;
         text-align: center;
         margin: 10px;
-      }
+        box-sizing: border-box;
+    box-shadow: 2px 2px 4px #000000;
+}
 
 .myCaseStudies { 
         display: block;
+        margin-bottom: 20px;
      }
 
 .myCaseStudies h3 { 
