@@ -24,3 +24,7 @@ $("#searchIcon").hover( function(){
  //$(".navChildburger","display","flex").slideToggle();
 //});
 
+//$("button").click( function(){
+ // $('.animate').animate( {left: '250px'}, 1000 );
+//});
+
