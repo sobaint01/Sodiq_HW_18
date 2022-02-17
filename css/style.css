@@ -295,6 +295,36 @@ p {
     font-family: 'Public Sans', sans-serif;
  }
 
+.download {
+    display: flex;
+    align-items:center;
+    justify-content: end;
+    margin: 20px;
+}
+
+.downloadicon {
+    height: 75px;
+    width: 70px;
+    margin: 10px;
+    background-image: url("../images/Mask\ Group.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /**animation: downloadicon 0.7s infinite;**/
+}
+
+/**@keyframes downloadicon {
+    from {
+      margin-top: 0px;
+    }
+    50% {
+      margin-top: 1px;
+    }
+    to {
+      margin-top: 0px;
+    }
+  }**/
+
 
 .sectionContents { display: grid;
     margin: 20px;

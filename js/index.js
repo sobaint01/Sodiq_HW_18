@@ -15,7 +15,8 @@ $("#contact").hover( function(){
 });
 
 $("#searchIcon").hover( function(){
-  $(".searchform").css("display","flex");
+  $(".searchform").css("display","flex" );
+  
 });
 
 //burger toggle
