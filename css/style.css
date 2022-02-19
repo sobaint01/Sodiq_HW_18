@@ -79,20 +79,43 @@ a {
 
 
 #searchIcon:hover { transform: rotate(-45deg);
-    translate:initial;
     
    }
 
 .searchform {
-    outline: 2pt solid #FFC91B;
+    border: 1px solid #FFC91B;
     margin-left: 0px;
+    margin-right: 0px;
     width: 200px;
     height: 35px;
     margin: 10px;
     color: #D9B344;
-    text-align: center;
+    text-align: center !important;
     display: none;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+#formCloser {
+    border: 1px solid #FFC91B;
+    width: 35px;
+    height: 35px;
+    background-color: #FFC91B;
+    margin-left: 50px;
+    margin-right: 0px !important;
+    background-image: url("../images/closer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    transition: 0.3s;
+}
+
+#formCloser:hover {
+    background-color: #575757;
+    border: 1px solid #575757;
+}
+
+
 
 /**#searchIcon:hover { transform: translateX(40);
 outline: ; }**/
@@ -108,7 +131,7 @@ outline: ; }**/
 width: 120px;
 position: relative;
 /**outline: 2px solid red;**/
-margin: 0px;
+margin: 20px;
 padding: 5px;
 background-color: #262626;
 color: #FFC91B;
@@ -116,7 +139,7 @@ font-weight: 400;
 transition: 0.3s;
 }
 
-#project img :hover { 
+#project img:hover { 
     transition: 0.3s;
     transform: rotate(180deg);
     background-color: #575757;
@@ -128,7 +151,7 @@ transition: 0.3s;
 width: 120px;
 position: relative;
 /**outline: 2px solid red;**/
-margin: 0px;
+margin: 20px;
 padding: 5px;
 background-color: #262626;
 color: #FFC91B;
@@ -136,7 +159,7 @@ font-weight: 400;
 transition: 0.3s;
 }
 
-#about img :hover { 
+#about img:hover { 
     transition: 0.3s;
     transform: rotate(180deg);
     background-color: #575757;
@@ -148,7 +171,7 @@ transition: 0.3s;
 width: 120px;
 position: relative;
 /**outline: 2px solid red;**/ 
-margin: 0px;
+margin: 20px;
 padding: 5px;
 background-color: #262626;
 color: #FFC91B;
@@ -168,7 +191,7 @@ transition: 0.3s;
 width: 120px;
 position: relative;
 /**outline: 2px solid red;**/ 
-margin: 0px;
+margin: 20px;
 padding: 5px;
 background-color: #262626;
 color: #FFC91B;
@@ -176,7 +199,7 @@ font-weight: 400;
 transition: 0.3s;
 }
 
-#contact img :hover { 
+#contact img:hover { 
     transition: 0.3s;
     transform: rotate(180deg);
     background-color: #575757;
@@ -463,6 +486,10 @@ h2 {
     "img" "img" "img" "img"
     "h3" "h3" "h3"
 
+}
+
+button {
+    background-color: transparent;
 }
 
 #userResearch { 

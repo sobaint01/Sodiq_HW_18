@@ -147,8 +147,9 @@
         
         <div class="iconsearchContainer">
            <div id="searchIcon"><!--<p>Search</p>--></div>
-           <form class="searchform"> Search
-        </form>
+           <form class="searchform">Search
+            <button id="formCloser"></button>
+           </form>
         </div>
         
     </nav>
@@ -179,9 +180,25 @@
         
     </section>
 
+    <!-- Trigger/Open  Modal --><!--
+<button onclick="document.getElementsByClassName('id01').style.display='block'"
+class="w3-button">Open Modal</button>-->
+
+<!-- The Modal --> <!--
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementsByClassName('id01').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <p>Some text in the Modal..</p>
+      <p>Some text in the Modal..</p>
+    </div>
+  </div>
+</div>-->
+
     <div class="download">
         <a href="https://drive.google.com/file/d/1hN7IojVtamepfQBHQU8cNtf2Zm0Gksob/view?usp=sharing">
-        <div class="downloadicon"></div></a>
+        <button class="downloadicon"></button></a>
         <h4>Download My Resume</h4>  
     </div>
 
